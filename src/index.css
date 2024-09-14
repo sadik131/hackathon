@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+.breaking-news-headline {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+.breaking-news-item {
+  display: inline-block;
+  margin-right: 2rem; 
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 
 .custom-scrollbar::-webkit-scrollbar {
     height: 2px; 
